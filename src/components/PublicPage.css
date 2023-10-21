@@ -1,0 +1,121 @@
+/* PublicPage.css */
+
+@font-face {
+  font-family: "Aachen Bold Plain";
+  src: url("Aachen Bold Plain.woff") format("truetype"); /* Chemin relatif depuis le répertoire public */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.app {
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  color: #fff;
+}
+
+.public-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.card {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Ajout d'une légère transparence */
+  border-radius: 10px; /* Coins arrondis */
+}
+
+.datatable {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Fond légèrement transparent */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour l'en-tête de la datatable */
+.datatable th {
+  background-color: #d81b60; /* Couleur de fond de l'en-tête */
+  color: #fff; /* Couleur du texte de l'en-tête */
+  font-weight: bold;
+  border: none;
+}
+
+/* Couleur de survol des lignes */
+.datatable tbody tr:hover {
+  background-color: #ff3366; /* Couleur de fond au survol */
+  color: #fff; /* Couleur du texte au survol */
+  cursor: pointer;
+}
+
+.refresh-button {
+  margin-top: 20px;
+  background-color: #d81b60;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Coins arrondis pour le bouton */
+}
+
+.refresh-button:hover {
+  background-color: #ff3366;
+}
+
+.logo {
+  width: 300px; /* Redimensionnez le logo à la taille souhaitée */
+  height: auto; /* Maintenez le rapport hauteur/largeur original */
+  margin-bottom: 20px; /* Ajout d'un espace sous le logo */
+}
+
+.circle-pink {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #d81b60; /* Couleur rose de Secret Story */
+  border-radius: 50%;
+  font-weight: bold;
+  color: #d81b60; /* Couleur du texte rose */
+}
+
+.participant-image {
+  width: auto;
+  height: 75px;
+  display: block;
+}
+
+.participant-name {
+  margin-top: 10px; /* Espace entre l'image et le texte */
+  font-family: "Aachen Bold Plain";
+  font-size: larger;
+}
+
+.participant-container {
+  display: inline-block;
+  text-align: center;
+}
+
+.secret-text {
+  text-transform: uppercase; /* Met le texte en majuscules */
+  font-weight: bold; /* Met le texte en gras */
+  font-style: italic;
+}
+
+/* Dans votre fichier CSS */
+.secret-text-crossed {
+  text-decoration: line-through;
+}

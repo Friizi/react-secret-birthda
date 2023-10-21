@@ -1,0 +1,120 @@
+/* AdminPage.css */
+
+/* Conteneur principal */
+.admin-page2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Couleur de fond de la page */
+}
+
+/* Carte contenant le formulaire et le classement */
+.card2 {
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #ffffff; /* Couleur de fond de la carte */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+/* Formulaire de nomination */
+.nomination-form2 {
+  margin-bottom: 20px;
+}
+
+.nomination-form2 h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form-row2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-row2 label {
+  font-weight: bold;
+}
+
+.form-row2 input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Bouton de nomination */
+.p-button2 {
+  margin-top: 10px;
+  background-color: #007ad9; /* Couleur de fond du bouton */
+  color: #ffffff; /* Couleur du texte du bouton */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Classement */
+.rankings2 {
+  text-align: center;
+}
+
+.rankings2 h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.rankings2 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.rankings2 li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Style général des boutons */
+.p-button2 {
+  width: 100%;
+}
+
+/* Réglages spécifiques pour le bouton de nomination */
+.p-button2 .pi-check2 {
+  margin-right: 5px;
+}
+
+/* Style pour le menu (peut être personnalisé) */
+.menu2 {
+  background-color: #d81b60;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu2 ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.menu2 ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.menu2 ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  margin-right: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu2 ul li a:hover {
+  text-decoration: underline;
+}

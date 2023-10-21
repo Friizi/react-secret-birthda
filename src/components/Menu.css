@@ -1,0 +1,39 @@
+/* Menu.css */
+
+.menu {
+  background-color: #d81b60; /* Couleur de fond du menu */
+  padding: 10px; /* Espacement interne du menu */
+  display: flex; /* Utilisation de flexbox */
+  justify-content: center; /* Centre les éléments horizontalement */
+  overflow-x: auto; /* Ajoutez un défilement horizontal si nécessaire */
+}
+
+.menu ul {
+  list-style-type: none; /* Supprime les puces de la liste */
+  padding: 0;
+  display: flex; /* Utilisation de flexbox */
+  flex-wrap: wrap; /* Permet aux éléments de s'enrouler sur une nouvelle ligne */
+  justify-content: center; /* Centre les éléments horizontalement */
+}
+
+.menu ul li {
+  margin: 0;
+  padding: 0;
+  margin-right: 20px; /* Espacement entre les liens */
+}
+
+.menu ul li:last-child {
+  margin-right: 0; /* Supprimez l'espacement à droite pour le dernier élément */
+}
+
+.menu ul li a {
+  text-decoration: none; /* Supprime le soulignement des liens */
+  color: #fff; /* Couleur du texte des liens */
+  font-size: 18px; /* Taille de police des liens */
+  font-weight: bold; /* Met le texte en gras */
+  text-transform: uppercase; /* Met le texte en majuscules */
+}
+
+.menu ul li a:hover {
+  text-decoration: underline; /* Soulignez le lien au survol */
+}

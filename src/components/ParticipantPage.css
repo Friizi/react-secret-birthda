@@ -1,0 +1,36 @@
+/* ParticipantPage.css */
+
+@font-face {
+  font-family: "Aachen Bold Plain";
+  src: url("Aachen Bold Plain.woff") format("truetype"); /* Chemin relatif depuis le répertoire public */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.participant1-card {
+  text-align: center;
+  width: 200px; /* Largeur fixe pour chaque carte */
+  height: 250px; /* Hauteur fixe pour chaque carte */
+  margin: 10px; /* Espacement entre chaque carte */
+  display: inline-block;
+  vertical-align: top; /* Alignement des cartes en haut de la ligne */
+  position: relative; /* Position relative pour le conteneur */
+  font-family: "Aachen Bold Plain";
+  font-size: larger;
+}
+
+/* Style pour l'image de base (participant) */
+.participant1-image {
+  width: 100%; /* Remplir la largeur du conteneur */
+  height: auto; /* Maintenir le rapport hauteur/largeur d'origine de l'image */
+}
+
+/* Style pour l'image à superposer (croix) */
+.croix-image {
+  position: absolute; /* Position absolue pour superposer l'image */
+  top: 0; /* Position en haut */
+  left: 0; /* Position à gauche */
+  width: 100%; /* Remplir la largeur du conteneur du participant */
+  height: 100%; /* Remplir la hauteur du conteneur du participant */
+  z-index: 2; /* Élévation de l'image de la croix au-dessus de l'image du participant */
+}
