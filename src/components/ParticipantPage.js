@@ -17,6 +17,11 @@ const ParticipantPage = () => {
     return `/images/${imageName}`;
   };
 
+  const handleRefreshClick = () => {
+    // Actualiser la page en rechargeant la fenêtre
+    window.location.reload();
+  };
+
   return (
     <div className="public-page">
       {" "}
@@ -60,9 +65,10 @@ const ParticipantPage = () => {
         )}
       </Card>
       <Button
-        label="Actualiser le classement"
+        label="Actualiser la liste"
         icon="pi pi-refresh"
         className={classNames("refresh-button")}
+        onClick={handleRefreshClick}
       />
     </div>
   );

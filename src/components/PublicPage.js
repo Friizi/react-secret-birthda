@@ -22,6 +22,11 @@ const PublicPage = () => {
     return `/images/${imageName}`;
   };
 
+  const handleRefreshClick = () => {
+    // Actualiser la page en rechargeant la fenêtre
+    window.location.reload();
+  };
+
   return (
     <div className="public-page">
       <img
@@ -91,6 +96,7 @@ const PublicPage = () => {
         label="Actualiser le classement"
         icon="pi pi-refresh"
         className={classNames("refresh-button")}
+        onClick={handleRefreshClick}
       />
     </div>
   );

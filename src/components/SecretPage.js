@@ -5,7 +5,7 @@ import { Card } from "primereact/card";
 import { Button } from "primereact/button";
 import { classNames } from "primereact/utils";
 import { RankingProvider, useRanking } from "./RankingContext";
-import Menu from "./Menu"; // Importez le composant Menu
+import Menu from "./Menu";
 import "./PublicPage.css";
 import secretStoryLogo from "./images/Secret_Story_Logo.png";
 
@@ -15,14 +15,21 @@ const SecretPage = () => {
 
   useEffect(() => {
     if (!loading) {
-      // Copiez le tableau rankings pour le trier aléatoirement
       const shuffledRankings = [...rankings];
-      // Triez le tableau aléatoirement
       shuffledRankings.sort(() => Math.random() - 0.5);
-      // Mettez à jour l'état avec le tableau trié aléatoirement
       setRandomizedRankings(shuffledRankings);
     }
   }, [loading, rankings]);
+
+  // Filtrer les lignes avec show === 1
+  const filteredRankings = randomizedRankings.filter(
+    (rowData) => rowData.show === 1
+  );
+
+  const handleRefreshClick = () => {
+    // Actualiser la page en rechargeant la fenêtre
+    window.location.reload();
+  };
 
   return (
     <div className="public-page">
@@ -38,7 +45,7 @@ const SecretPage = () => {
           <div>Loading...</div>
         ) : (
           <DataTable
-            value={randomizedRankings} // Utilisez le tableau trié aléatoirement
+            value={filteredRankings} // Utiliser le tableau filtré
             className="datatable responsive-datatable"
             stripedRows
           >
@@ -60,9 +67,10 @@ const SecretPage = () => {
         )}
       </Card>
       <Button
-        label="Actualiser le classement"
+        label="Actualiser la liste"
         icon="pi pi-refresh"
         className={classNames("refresh-button")}
+        onClick={handleRefreshClick}
       />
     </div>
   );

@@ -123,18 +123,24 @@ const AdminPage = () => {
           <Dropdown
             value={selectedNominant}
             options={filterNominantOptions()} // Utiliser la fonction de filtre pour exclure le nominé sélectionné
+            filter
+            showClear
             onChange={(e) => setSelectedNominant(e.value)}
             placeholder="Sélectionnez un nominant"
           />
           <Dropdown
             value={selectedNominee}
             options={filterNomineeOptions()} // Utiliser la fonction de filtre pour exclure le nominant sélectionné
+            filter
+            showClear
             onChange={(e) => setSelectedNominee(e.value)}
             placeholder="Sélectionnez un nominé"
           />
           <Dropdown
             value={selectedSecret}
             options={secretOptions}
+            filter
+            showClear
             onChange={(e) => setSelectedSecret(e.value)}
             placeholder="Sélectionnez un secret"
           />
